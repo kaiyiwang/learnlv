@@ -54,7 +54,7 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            // Êý¾Ý¿âµÄ¶Ë¿ÚÎª3306£¬apache php artisan serve·þÎñÆ÷Ä¬ÈÏ¿ªÆôµÄÎª8000¶Ë¿Ú£¬ËùÒÔÊý¾Ý¿âÕâÀïÐèÒªÌØµØÖ¸Ã÷Á¬½ÓµÄÊý¾Ý¿âµÄ¶Ë¿Ú3306
+            // æ•°æ®åº“çš„ç«¯å£ä¸º3306ï¼Œapache php artisan serveæœåŠ¡å™¨é»˜è®¤å¼€å¯çš„ä¸º8000ç«¯å£ï¼Œæ‰€ä»¥æ•°æ®åº“è¿™é‡Œéœ€è¦ç‰¹åœ°æŒ‡æ˜Žè¿žæŽ¥çš„æ•°æ®åº“çš„ç«¯å£3306
             'host'      => env('DB_HOST', 'localhost:3306'),   
             'database'  => env('DB_DATABASE', 'learnlv'),
             'username'  => env('DB_USERNAME', 'root'),

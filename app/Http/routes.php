@@ -12,12 +12,17 @@
 */
 
 Route::get('/', function () {
-    // return view('welcome');
+  //  return view('welcome');
     // return view("Hello laravel !");   // 模板
     // return "Hello laravel !";
     
-   $items = array(2,4,'kaiyi', 'github');
-   return view('home.index')->with('items', $items);
+    // $res = array(2,4,'kaiyi', 'github');
+   // return view('home.index')->with('items', $items);
+   
+   // 数据库查询
+    $res = DB::select('select * from posts');
+    dd($res);
+
 });
 
 Route::get('about', function()
