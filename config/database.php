@@ -56,7 +56,7 @@ return [
             'driver'    => 'mysql',
             // 数据库的端口为3306，apache php artisan serve服务器默认开启的为8000端口，所以数据库这里需要特地指明连接的数据库的端口3306
             'host'      => env('DB_HOST', 'localhost:3306'),   
-            'database'  => env('DB_DATABASE', 'learnlv'),
+            'database'  => env('DB_DATABASE', 'url'),
             'username'  => env('DB_USERNAME', 'root'),
             'password'  => env('DB_PASSWORD', '518666'),
             'charset'   => 'utf8',

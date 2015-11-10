@@ -2,9 +2,9 @@
 
 @section('container')
 
-  <h1>短链生成器</h1>
+ 	<h1>短链生成器</h1>
         <div class="col-lg-8">
-          {{Form::open(['url' => '/'])}}
+           {{Form::open(['url' => '/'])}}
            
             <div class="input-group">
               {{Form::text('url', '', ['class' => "form-control input-lg", 'placeholder' => "请输入URL链接"])}}
@@ -14,11 +14,8 @@
             </div><!-- /input-group -->
             {{Form::close()}}
                 <br><br>
-                @if(!empty($errors->first('url')))
-                <div class="alert alert-warning alert-dismissable">
-                  {{$errors->first('url')}}
-                </div>
-                @endif
+                <h2>您的短链:<a href="#" target="_blank">url.dev/asde</a></h2>
+                 {{HTML::Link($shortened, url('/').'/'.$shortened, ['target' => '_blank'])}}
 
           </div><!-- /.col-lg-8 -->
 

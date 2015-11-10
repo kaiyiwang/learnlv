@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    //  return view('welcome');
+// Route::get('/', function () {
+ //   return view('welcome');
     // return view("Hello laravel !");   // 模板
     // return "Hello laravel !";
     
@@ -36,17 +36,19 @@ Route::get('/', function () {
     // 表联合查询
     // $res = App\Post::find(1)->comment->toarray();
     
-     Route::get('post', 'PostController@show_post');
-     dd($res);
+    // Route::get('post', 'PostController@show_post');
+    // dd($res);
+    // 
 
-});
+// });
 
-Route::get('about', function()
-{
-	// return View::make('home.index');
-	return view('home.index');
 
-});
+ Route::get('/', 'HomeController@index');
 
- Route::get('post', 'PostController@show_post');
+ Route::get('{url_code}', 'HomeController@shortened');
+
+ Route::post('/', 'HomeController@store');
+
+
+
 
